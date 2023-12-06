@@ -1,0 +1,52 @@
+{
+  "name": "vite-plugin-clean-css",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.11.0",
+  "description": "Optimize CSS for production using clean-css",
+  "author": "Alex Liu <dsa1314@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/Mini-ghost/vite-plugin-clean-css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mini-ghost/vite-plugin-clean-css.git"
+  },
+  "bugs": "https://github.com/Mini-ghost/vite-plugin-clean-css/issues",
+  "keywords": [
+    "clean-css",
+    "vite",
+    "vite-plugin",
+    "vue"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "LICENSE",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "publish:ci": "esno scripts/publish.ts"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.3.4",
+    "@types/clean-css": "^4.2.11",
+    "@types/node": "^20.10.3",
+    "clean-css": "^5.3.3",
+    "eslint": "^8.55.0",
+    "esno": "^4.0.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.6"
+  }
+}
