@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-clean-css",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.11.0",
   "description": "Optimize CSS for production using clean-css",
   "author": "Alex Liu <dsa1314@gmail.com>",
