@@ -38,11 +38,13 @@
     "typecheck": "tsc --noEmit",
     "publish:ci": "esno scripts/publish.ts"
   },
+  "dependencies": {
+    "clean-css": "^5.3.3"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.3.4",
     "@types/clean-css": "^4.2.11",
     "@types/node": "^20.10.3",
-    "clean-css": "^5.3.3",
     "eslint": "^8.55.0",
     "esno": "^4.0.0",
     "tsup": "^8.0.1",

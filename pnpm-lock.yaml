@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      clean-css:
+        specifier: ^5.3.3
+        version: 5.3.3
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.3.4
@@ -17,9 +21,6 @@ importers:
       '@types/node':
         specifier: ^20.10.3
         version: 20.10.3
-      clean-css:
-        specifier: ^5.3.3
-        version: 5.3.3
       eslint:
         specifier: ^8.55.0
         version: 8.55.0
@@ -1202,7 +1203,7 @@ packages:
     engines: {node: '>= 10.0'}
     dependencies:
       source-map: 0.6.1
-    dev: true
+    dev: false
 
   /clean-regexp@1.0.0:
     resolution: {integrity: sha512-GfisEZEJvzKrmGWkvfhgzcz/BllN1USeqD2V6tg14OAOgaCD2Z/PUEuxnAZ/nPvmaHRG7a8y77p1T/IRQ4D1Hw==}
@@ -2802,7 +2803,6 @@ packages:
   /source-map@0.6.1:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
