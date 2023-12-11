@@ -33,6 +33,17 @@ This plugin minimizes CSS during production. It will minify CSS rules such as:
 Will be minimized to:
 
 ```css
+/* 
+ CleanCss({
+  level: {
+   2: {
+    mergeSemantically: true,
+    restructureRules: true,
+   },
+  },
+ }),
+*/
+
 /* 493 bytes */
 .translate-x-0,
 .translate-x-1 {
@@ -51,6 +62,10 @@ Will be minimized to:
 }
 ```
 
+> [!NOTE]
+> Using `mergeSemantically` may potentially affect CSS specificity.
+> Please consider its usage carefully.
+
 ## Installation
 
 ```bash
@@ -68,12 +83,8 @@ import CleanCss from 'vite-plugin-clean-css'
 export default defineConfig({
   plugins: [
     CleanCss({
-      level: {
-        2: {
-          mergeSemantically: true,
-          restructureRules: true,
-        },
-      },
+      // Please note that level 1 optimization options are generally safe while level 2 optimizations should be safe for most users.
+      level: 2,
     }),
   ],
 })
